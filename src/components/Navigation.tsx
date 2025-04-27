@@ -1,7 +1,5 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu } from 'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +24,19 @@ const Navigation = () => {
               className="text-neutral-850 hover:text-black transition-colors duration-200"
               aria-label="Toggle menu"
             >
-              <Menu size={24} />
+              <span
+                style={{
+                  display: 'inline-block',
+                  width: 32,
+                  height: 20,
+                  verticalAlign: 'middle',
+                }}
+              >
+                <svg width="32" height="20" viewBox="0 0 32 20">
+                  <rect y="5" width="32" height="2" rx="1" fill="#d4af37" />
+                  <rect y="13" width="32" height="2" rx="1" fill="#d4af37" />
+                </svg>
+              </span>
             </button>
           </div>
         </div>

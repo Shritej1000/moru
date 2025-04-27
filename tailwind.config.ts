@@ -14,6 +14,7 @@ export default {
         playfair: ['Playfair Display', 'serif'],
         sans: ['Inter', 'sans-serif'],
         'gilmer': ['Gilmer', 'sans-serif'],
+        'altone': ['Altone', 'sans-serif'],
       },
       colors: {
         neutral: {

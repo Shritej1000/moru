@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Instagram } from 'lucide-react';
 
@@ -11,7 +10,7 @@ const Footer = () => {
           
           <div className="flex space-x-6">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/morya_ghorpade?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-850 hover:text-black transition-colors duration-200"

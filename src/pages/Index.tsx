@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -13,10 +12,8 @@ const Index = () => {
         <div className="container mx-auto px-4">
           {/* Hero Section */}
           <div className="text-center mb-16 animate-fade-in">
-            <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl mb-6">
-              Timeless Moments,
-              <br />
-              Editorial Vision
+            <h1 className="font-altone text-4xl md:text-5xl lg:text-6xl mb-6">
+              Minimal, Meaningful, MORU.
             </h1>
           </div>
 
