@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Instagram, Pinterest } from 'lucide-react';
+import { Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -18,15 +18,6 @@ const Footer = () => {
               aria-label="Follow us on Instagram"
             >
               <Instagram size={20} />
-            </a>
-            <a
-              href="https://pinterest.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-neutral-850 hover:text-black transition-colors duration-200"
-              aria-label="Follow us on Pinterest"
-            >
-              <Pinterest size={20} />
             </a>
           </div>
 
