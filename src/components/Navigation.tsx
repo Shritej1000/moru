@@ -1,7 +1,13 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, ChevronDown } from 'lucide-react';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,20 +33,28 @@ const Navigation = () => {
             className="md:hidden"
             aria-label="Toggle menu"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <Menu size={24} /> : <Menu size={24} />}
           </button>
 
-          {/* Desktop menu */}
-          <div className="hidden md:flex space-x-8">
-            {links.map((link) => (
-              <Link
-                key={link.label}
-                to={link.to}
-                className="text-neutral-850 hover:text-black transition-colors duration-200"
-              >
-                {link.label}
-              </Link>
-            ))}
+          {/* Desktop dropdown menu */}
+          <div className="hidden md:block">
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-2 text-neutral-850 hover:text-black transition-colors duration-200">
+                Menu <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-40 bg-white">
+                {links.map((link) => (
+                  <DropdownMenuItem key={link.label}>
+                    <Link
+                      to={link.to}
+                      className="w-full text-neutral-850 hover:text-black transition-colors duration-200"
+                    >
+                      {link.label}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
 
