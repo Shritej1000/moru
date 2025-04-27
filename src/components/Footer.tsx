@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="py-12 bg-white">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center space-y-6">
-          <div className="font-playfair text-2xl font-semibold">MORU</div>
+          <div className="font-gilmer text-2xl font-semibold">MORU</div>
           
           <div className="flex space-x-6">
             <a

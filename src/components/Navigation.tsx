@@ -18,7 +18,7 @@ const Navigation = () => {
       <nav className="fixed w-full bg-white/90 backdrop-blur-sm z-50 py-4">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center">
-            <Link to="/" className="font-playfair text-2xl font-semibold">
+            <Link to="/" className="font-gilmer text-2xl font-semibold">
               MORU
             </Link>
             <button
@@ -54,4 +54,3 @@ const Navigation = () => {
 };
 
 export default Navigation;
-
